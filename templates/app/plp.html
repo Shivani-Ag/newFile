@@ -1,0 +1,29 @@
+﻿<ion-view view-title="Hello">
+    
+    <ion-header-bar class="bar-light bar-subheader">
+      <input type="search"
+             placeholder="Search Products..."
+             ng-model="search"
+             ng-focus="searchFocused = true"
+             ng-blur="searchFocused = false"
+             ng-change="scrollTop()"
+             style="font-family: sans-serif;font-size:18px"
+             class="full-width">
+    </ion-header-bar>
+    <ion-content>
+        <div class="cate-lv2">
+            <div class="card cate-lv2-item" ng-repeat="product in productByCate | filter:search">
+                <a class="item item-thumbnail-left item-text-wrap">
+                    
+                    <img ng-src={{product.img}}>
+
+                    <h2>{{product.name}} </h2>
+
+                    <div class="price">₹{{product.price}}</div>
+                   
+                   
+                </a>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

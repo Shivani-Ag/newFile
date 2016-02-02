@@ -1,0 +1,6 @@
+[
+    { "email": "xyz@gmail.com", "phone": "987654321", "address": "C-scheme" },
+    { "email": "abc@yahoo.in", "phone": "987654321", "address": "Mansarovar" },
+    { "email": "pqr@gmail.com", "phone": "987654321", "address": "Malviya Nagar" },
+    { "email": "stu@yahoo.in", "phone": "987654321", "address": "Jagatpura" }
+  ]

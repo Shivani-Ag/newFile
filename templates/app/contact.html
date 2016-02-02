@@ -1,0 +1,25 @@
+<body ng-app="myFirstApp">
+
+<div ng-controller="ContactCtrl">
+
+ <ion-header-bar class="bar-balanced">
+      <h1 align="center" class="title">Contact Us </h1>
+    </ion-header-bar>
+   
+    
+	<ion-content>
+
+    
+	<div class="list">
+
+        <a ng-repeat="item in itemss" class="item item-thumbnail-left">
+	
+          <h2>{{ item.email }}</h2>
+          <h4>{{ item.address }}</h4>
+	<h4>{{ item.phone }}</h4>
+        </a>
+</div>
+</ion-content>
+</div>
+     
+  </body>
